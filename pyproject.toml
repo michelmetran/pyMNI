@@ -1,6 +1,6 @@
 [project]
 name = "mni"
-version = "0.1.0"
+version = "0.1.1"
 description = "Modelo Nacional de Interoperabilidade"
 authors = [
     { name = "Michel Metran", email = "michelmetran@gmail.com" }
