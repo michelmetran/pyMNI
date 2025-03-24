@@ -18,8 +18,8 @@ nav:
   - Como Instalar?: pages/como-instalar.md
   - Como Usar?:
       - Número do Processo: scripts/numero_processos.ipynb
-      - Chamada via WebService: scripts/consulta_basic.ipynb
-  - Referências: pages/referências.md
+      - Chamada via WebService: scripts/consulta_basic2.ipynb
+  - Referências: pages/referencias.md
 
 theme:
   # Breadcrumbs
