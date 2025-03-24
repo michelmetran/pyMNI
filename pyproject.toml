@@ -53,6 +53,6 @@ optional = true
 #brazilian-holidays = ">=0.1.15"
 mkdocs = ">=1.6.1,<2.0.0"
 pymdown-extensions = ">=10.14.3,<11.0.0"
-#mkdocs-material[imaging] = ">=9.6.9,<10.0.0"
+mkdocs-material[imaging] = ">=9.6.9,<10.0.0"
 mkdocs-material = ">=9.6.9,<10.0.0"
 mkdocs-jupyter =  ">=0.25.1,<0.26.0"
