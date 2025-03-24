@@ -3,7 +3,7 @@ nome [mni](https://pypi.org/project/mni/).
 
 Para instalar basta dar o comando:
 
-````shell
+```shell
 # Instala pacote
 pip3 install mni
 
@@ -12,5 +12,4 @@ pip3 install mni==0.1.2
 
 # Instala pacote mais atual
 pip3 install mni --upgrade
-````
-
+```
