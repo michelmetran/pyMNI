@@ -1,5 +1,5 @@
 [project]
-name = "pymni"
+name = "mni"
 version = "0.1.0"
 description = "Modelo Nacional de Interoperabilidade"
 authors = [
