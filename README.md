@@ -2,6 +2,7 @@
 
 [![Repo](https://img.shields.io/badge/GitHub-repo-blue?logo=github&logoColor=f5f5f5)](https://github.com/michelmetran/pyMNI)
 
+
 O Modelo Nacional de
 Interoperabilidade ([MNI](https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/comite-nacional-de-gestao-de-tecnologia-da-informacao-e-comunicacao-do-poder-judiciario/modelo-nacional-de-interoperabilidade/))
 do Conselho Nacional de Justiça ([CNJ](https://www.cnj.jus.br/)) é um padrão estabelecido para o intercâmbio de
