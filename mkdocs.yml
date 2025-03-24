@@ -1,0 +1,88 @@
+# Basic
+site_name: pyMNI
+site_author: Michel Metran
+site_url: https://mni.readthedocs.io/
+copyright: |
+  &copy; 2025 <a href="https://github.com/michelmetran"  target="_blank" rel="noopener">Michel Metran</a>
+
+# GitHub Repo Link
+repo_url: https://github.com/michelmetran/pyMNI
+
+docs_dir: 'docs' # Default docs
+site_dir: 'site' # Default site
+
+theme:
+  # Breadcrumbs
+  features:
+    #- navigation.path
+    - navigation.top
+    #- navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.instant.prefetch
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    #- toc.integrate
+    - content.code.annotation
+    - content.code.copy
+
+  language: pt-BR
+
+  icon:
+    repo: fontawesome/brands/github
+
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+
+
+# https://facelessuser.github.io/pymdown-extensions/
+markdown_extensions:
+  - pymdownx.emoji # Suporte a emojis
+  - pymdownx.tasklist # Suporte à tarefas
+  - pymdownx.mark # Marcado
+  - pymdownx.tilde  # Realçado
+  - pymdownx.highlight  # Código
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+          # Referências
+          # https://github.com/facelessuser/pymdown-extensions/blob/main/docs/src/mkdocs.yml
+
+  - toc:
+      permalink: true
+      separator: '_'
+
+plugins:
+  - social
+  - search
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+      include_source: True
+      execute: true
+      show_input: True # Default True
+      no_input: False # Default False
+      #ignore: [ '1*.ipynb' ]
+      include: [ '*.ipynb' ] # Default: ["*.py", "*.ipynb"]
