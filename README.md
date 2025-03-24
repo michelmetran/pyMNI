@@ -30,26 +30,24 @@ modelo.
 
 ---
 
-## Funções / Objetivo
+## Resolução nº 65/2011
 
-- Validação dos números de processos judiciais, definidos por meio da Resolução
-  CNJ nº 65/2008.
-  - O cálculo do dígito verificador, segundo o TJRS, acerta em 99,4% dos casos.
-    Avaliar os casos de
-    erro. [TJRS](https://www.cnj.jus.br/wp-content/uploads/2011/02/tjrs.ppt)
+O pacote também provê uma classe chamada `NumeroProcesso` para lidar com as
+validações dos números de processos judiciais definidas na Resolução CNJ nº
+65/2008, que _"dispõe sobre a
+uniformização do número dos processos nos órgãos do Poder Judiciário e dá outras
+providências"_.
 
-<br>
-
----
-
-## Referência
-
-- https://github.com/ScurFelipe/validacao
+A classe faz o cálculo do dígito verificador, para avaliar se o número está
+correto. Segundo
+o [TJRS](https://www.cnj.jus.br/wp-content/uploads/2011/02/tjrs.ppt), o
+algoritmo usado pelo CNJ acerta em 99,4% dos casos. Necessário avaliar os casos
+de erro.
 
 <br>
 
----
+----
 
 ## _TODO_
 
-1. ...
+1. Desenvolver documentação para o pacote

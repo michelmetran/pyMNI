@@ -26,3 +26,20 @@ modelo.
 | [SP](https://esaj.tjsp.jus.br/mniws/servico-intercomunicacao-2.2.2/intercomunicacao?wsdl) | ...   |
 | [RJ](https://webserverseguro.tjrj.jus.br/MNI/Servico.svc?wsdl)                            | ...   |
 
+<br>
+
+---
+
+## Resolução nº 65/2011
+
+O pacote também provê uma classe chamada `NumeroProcesso` para lidar com as
+validações dos números de processos judiciais definidas na Resolução CNJ nº
+65/2008, que _"dispõe sobre a
+uniformização do número dos processos nos órgãos do Poder Judiciário e dá outras
+providências"_.
+
+A classe faz o cálculo do dígito verificador, para avaliar se o número está
+correto. Segundo
+o [TJRS](https://www.cnj.jus.br/wp-content/uploads/2011/02/tjrs.ppt), o
+algoritmo usado pelo CNJ acerta em 99,4% dos casos. Necessário avaliar os casos
+de erro.
