@@ -10,8 +10,8 @@ requires-python = ">=3.10"
 dependencies = [
     "zeep (>=4.3.1,<5.0.0)",
     "python-dotenv (>=1.0.1,<2.0.0)",
-    "pandas (>=2.2.3,<3.0.0)",
-    "notebook (>=7.3.2,<8.0.0)",
+    "pandas (>=2.2.2,<3.0.0)",
+    "notebook (>=6.5.7,<8.0.0)",
     "case-converter (>=1.1.0,<2.0.0)"
 ]
 
