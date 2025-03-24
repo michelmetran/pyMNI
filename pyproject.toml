@@ -1,0 +1,21 @@
+[project]
+name = "pymni"
+version = "0.1.0"
+description = "Modelo Nacional de Interoperabilidade"
+authors = [
+    { name = "Michel Metran", email = "michelmetran@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "zeep (>=4.3.1,<5.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "notebook (>=7.3.2,<8.0.0)",
+    "case-converter (>=1.1.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
