@@ -11,6 +11,13 @@ repo_url: https://github.com/michelmetran/pyMNI
 docs_dir: 'docs' # Default docs
 site_dir: 'site' # Default site
 
+# NavBar
+# Opcional
+nav:
+  - Home: index.md
+  - Como Instalar?: pages/Lixo.md
+  - Como Usar?: scripts/numero_processos.ipynb
+
 theme:
   # Breadcrumbs
   features:
@@ -68,8 +75,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-          # Referências
-          # https://github.com/facelessuser/pymdown-extensions/blob/main/docs/src/mkdocs.yml
+            # Referências
+            # https://github.com/facelessuser/pymdown-extensions/blob/main/docs/src/mkdocs.yml
 
   - toc:
       permalink: true
