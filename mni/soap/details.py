@@ -11,7 +11,7 @@ import pandas as pd
 from caseconverter import snakecase
 # import xmltodict
 
-import pymni as mni
+import mni
 from zeep import Client
 import pandas as pd
 from zeep import client
@@ -51,12 +51,12 @@ class MNI(client.Client):
         )
 
     def consultar_processo(
-            self,
-            numero_processo: mni.NumeroProcesso,
-            # Opcionais
-            incluir_cabecalho: bool | None = True,
-            incluir_movimentos: bool | None = True,
-            incluir_documentos: bool | None = None
+        self,
+        numero_processo: mni.NumeroProcesso,
+        # Opcionais
+        incluir_cabecalho: bool | None = True,
+        incluir_movimentos: bool | None = True,
+        incluir_documentos: bool | None = None
     ):
         """
 
@@ -80,12 +80,12 @@ class MNI(client.Client):
         return result
 
     def consultar_documentos(
-            self,
-            numero_processo: mni.NumeroProcesso,
-            # Opcionais
-            # incluir_cabecalho: bool | None = None,
-            # incluir_movimentos: bool | None = None,
-            # incluir_documentos: bool | None = True
+        self,
+        numero_processo: mni.NumeroProcesso,
+        # Opcionais
+        # incluir_cabecalho: bool | None = None,
+        # incluir_movimentos: bool | None = None,
+        # incluir_documentos: bool | None = True
     ):
         """
 
@@ -108,13 +108,13 @@ class MNI(client.Client):
         return result
 
     def obter_documentos(
-            self,
-            numero_processo: mni.NumeroProcesso,
-            # Opcionais
-            # incluir_cabecalho: bool | None = None,
-            # incluir_movimentos: bool | None = None,
-            # incluir_documentos: bool | None = True
-            id_documento: str
+        self,
+        numero_processo: mni.NumeroProcesso,
+        # Opcionais
+        # incluir_cabecalho: bool | None = None,
+        # incluir_movimentos: bool | None = None,
+        # incluir_documentos: bool | None = True
+        id_documento: str
     ):
         """
 
@@ -163,7 +163,7 @@ class MNI(client.Client):
 
 
 if __name__ == '__main__':
-    import pymni as mni
+    import mni
     from dotenv import load_dotenv
     import os
 
@@ -174,7 +174,8 @@ if __name__ == '__main__':
 
     # Número do Processo
     # num = mni.NumeroProcesso(numero='1512315-89.2022.8.26.0268')
-    num = mni.NumeroProcesso(numero='0139541-45.2007.8.26.0053')  # MPSP não é parte
+    num = mni.NumeroProcesso(
+        numero='0139541-45.2007.8.26.0053')  # MPSP não é parte
     num = mni.NumeroProcesso(numero='1503015-13.2023.8.26.0319')
 
     # MNI TJSP
@@ -189,7 +190,8 @@ if __name__ == '__main__':
     )
 
     resultado = api.consultar_documentos(numero_processo=num)
-    resultado = api.obter_documentos(numero_processo=num, id_documento='278755780 - 1')
+    resultado = api.obter_documentos(numero_processo=num,
+                                     id_documento='278755780 - 1')
 
     # # Se for pesquisar documento, precisa estar None
     # resultado = api.consultar_processo(
