@@ -1,23 +1,22 @@
 [project]
 name = "mni"
-version = "0.1.6"
+version = "0.1.7"
 description = "Modelo Nacional de Interoperabilidade"
+keywords = ["cnj", "mni", "tjsp", "mpsp"]
 authors = [
     { name = "Michel Metran", email = "michelmetran@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.10"
-license = "GPLv3"
+license = "GPL-3.0"
 license-files = ["LICEN[CS]E*"]
-documentation = "https://mni.readthedocs.io"
-repository = "https://github.com/michelmetran/pyMNI"
 dependencies = [
     "zeep (>=4.3.1,<5.0.0)",
     "python-dotenv (>=1.0.1,<2.0.0)",
     "pandas (>=2.2.2,<3.0.0)",
     "notebook (>=7.3.3,<8.0.0)",
     "case-converter (>=1.1.0,<2.0.0)",
-    "mkdocs-material[imaging] (>=9.6.9,<10.0.0)",
+    #"mkdocs-material[imaging] (>=9.6.9,<10.0.0)",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -30,6 +29,8 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/michelmetran/pyMNI"
 Issues = "https://github.com/michelmetran/pyMNI/issues"
+Repository = "https://github.com/michelmetran/pyMNI.git"
+Documentation = "https://pyMNI.readthedocs.io"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
