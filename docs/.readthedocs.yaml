@@ -13,12 +13,12 @@ build:
     # https://browniebroke.com/blog/2022-11-21-specify-docs-dependency-groups-with-poetry-and-read-the-docs/
     # https://docs.readthedocs.com/platform/stable/config-file/v2.html#build-jobs
     jobs:
-#        pre_create_environment:
-#            - echo "Command run at 'pre_create_environment' step"
+        # pre_create_environment:
+        #     - echo "Command run at 'pre_create_environment' step"
 
-#        post_build:
-#            - echo "Command run at 'post_build' step"
-#            - echo `date`
+        # post_build:
+        #     - echo "Command run at 'post_build' step"
+        #     - echo `date`
 
         post_create_environment:
             # Install Poetry
@@ -35,7 +35,7 @@ build:
             #- poetry install --with docs
             # https://github.com/readthedocs/readthedocs.org/issues/4912#issuecomment-1992286540
             - VIRTUAL_ENV=$READTHEDOCS_VIRTUALENV_PATH poetry install --with docs
-            #- echo "dsdsda"
+            - echo ${TJSP_MNI_USERNAME}
 
 # Build documentation with Mkdocs
 mkdocs:
@@ -47,7 +47,6 @@ mkdocs:
 # python:
 #    install:
 #    - requirements: docs/requirements.txt
-
 
 # Optionally build your docs in additional formats such as PDF and ePub
 formats:

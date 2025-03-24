@@ -1,15 +1,15 @@
 # Basic
 site_name: pyMNI
 site_author: Michel Metran
-site_url: https://pymni.readthedocs.io/
+site_url: https://pyMNI.readthedocs.io/
 copyright: |
   &copy; 2025 <a href="https://github.com/michelmetran"  target="_blank" rel="noopener">Michel Metran</a>
 
 # GitHub Repo Link
 repo_url: https://github.com/michelmetran/pyMNI
 
-docs_dir: 'docs' # Default docs
-site_dir: 'site' # Default site
+docs_dir: "docs" # Default docs
+site_dir: "site" # Default site
 
 # NavBar
 # Opcional
@@ -19,7 +19,7 @@ nav:
   - Como Usar?:
       - Número do Processo: scripts/numero_processos.ipynb
       - Chamada via WebService: scripts/consulta.ipynb
-      - Chamada: scripts/teste.ipynb
+
   - Referências: pages/referencias.md
 
 theme:
@@ -65,15 +65,13 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
-
-
 # https://facelessuser.github.io/pymdown-extensions/
 markdown_extensions:
   - pymdownx.emoji # Suporte a emojis
   - pymdownx.tasklist # Suporte à tarefas
   - pymdownx.mark # Marcado
-  - pymdownx.tilde  # Realçado
-  - pymdownx.highlight  # Código
+  - pymdownx.tilde # Realçado
+  - pymdownx.highlight # Código
   #  - pymdownx.superfences:
   #      custom_fences:
   #        - name: mermaid
@@ -84,7 +82,7 @@ markdown_extensions:
 
   - toc:
       permalink: true
-      separator: '_'
+      separator: "_"
 
 plugins:
   - social
@@ -96,8 +94,7 @@ plugins:
       show_input: True # Default True
       no_input: False # Default False
       #ignore: [ '1*.ipynb' ]
-      include: [ '*.ipynb' ] # Default: ["*.py", "*.ipynb"]
-
+      include: ["*.ipynb"] # Default: ["*.py", "*.ipynb"]
 
 extra:
   analytics:
