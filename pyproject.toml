@@ -1,6 +1,6 @@
 [project]
 name = "mni"
-version = "0.1.4"
+version = "0.1.5"
 description = "Modelo Nacional de Interoperabilidade"
 authors = [
     { name = "Michel Metran", email = "michelmetran@gmail.com" }
@@ -11,10 +11,22 @@ dependencies = [
     "zeep (>=4.3.1,<5.0.0)",
     "python-dotenv (>=1.0.1,<2.0.0)",
     "pandas (>=2.2.2,<3.0.0)",
-    "notebook (>=6.5.7,<8.0.0)",
+    "notebook (>=7.3.3,<8.0.0)",
     "case-converter (>=1.1.0,<2.0.0)"
 ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: Portuguese (Brazilian)"
+]
+license = "GPL"
+license-files = ["LICEN[CS]E*"]
 
+
+[project.urls]
+Homepage = "https://github.com/michelmetran/pyMNI"
+Issues = "https://github.com/michelmetran/pyMNI/issues"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
