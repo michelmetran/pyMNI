@@ -18,7 +18,7 @@ nav:
   - Como Instalar?: pages/como-instalar.md
   - Como Usar?:
       - Número do Processo: scripts/numero_processos.ipynb
-      - Chamada via WebService: scripts/consulta_basic2.ipynb
+      - Chamada via WebService: scripts/consulta.ipynb
   - Referências: pages/referencias.md
 
 theme:
@@ -104,7 +104,6 @@ extra:
     property: G-HSMVSKGX7H
 
 
-extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/michelmetran
