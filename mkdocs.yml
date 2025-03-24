@@ -8,8 +8,8 @@ copyright: |
 # GitHub Repo Link
 repo_url: https://github.com/michelmetran/pyMNI
 
-#docs_dir: 'docs' # Default docs
-#site_dir: 'site' # Default site
+docs_dir: 'docs' # Default docs
+site_dir: 'site' # Default site
 
 # NavBar
 # Opcional
