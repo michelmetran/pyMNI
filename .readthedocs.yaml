@@ -14,11 +14,11 @@ build:
     jobs:
         pre_create_environment:
             - echo "Command run at 'pre_create_environment' step"
-            -
+
         post_build:
             - echo "Command run at 'post_build' step"
             - echo `date`
-            -
+
         post_create_environment:
             # Install Poetry
             - pip install poetry
