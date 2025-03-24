@@ -14,7 +14,7 @@ import pandas as pd
 from caseconverter import snakecase
 # import xmltodict
 
-import pymni as mni
+import mni
 from zeep import Client
 import pandas as pd
 from zeep import client
@@ -153,7 +153,8 @@ class WSDL(client.Client):
 
 
 if __name__ == '__main__':
-    import pymni as mni
+    import mni
+
     from dotenv import load_dotenv
     import os
 
