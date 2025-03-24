@@ -19,6 +19,7 @@ nav:
   - Como Usar?:
       - Número do Processo: scripts/numero_processos.ipynb
       - Chamada via WebService: scripts/consulta.ipynb
+      - Chamada: scripts/teste.ipynb
   - Referências: pages/referencias.md
 
 theme:
@@ -102,7 +103,6 @@ extra:
   analytics:
     provider: google
     property: G-HSMVSKGX7H
-
 
   social:
     - icon: fontawesome/brands/github-alt
