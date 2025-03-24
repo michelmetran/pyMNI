@@ -95,6 +95,9 @@ plugins:
       no_input: False # Default False
       #ignore: [ '1*.ipynb' ]
       include: ["*.ipynb"] # Default: ["*.py", "*.ipynb"]
+      remove_tag_config:
+        remove_input_tags:
+          - hide_code
 
 extra:
   analytics:
