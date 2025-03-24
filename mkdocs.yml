@@ -93,3 +93,19 @@ plugins:
       no_input: False # Default False
       #ignore: [ '1*.ipynb' ]
       include: [ '*.ipynb' ] # Default: ["*.py", "*.ipynb"]
+
+
+extra:
+  analytics:
+    provider: google
+    property: G-HSMVSKGX7H
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/michelmetran
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/michelmetran/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/michelmetran

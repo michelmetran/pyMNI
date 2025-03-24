@@ -13,20 +13,18 @@ dependencies = [
     "pandas (>=2.2.2,<3.0.0)",
     "notebook (>=7.3.3,<8.0.0)",
     "case-converter (>=1.1.0,<2.0.0)",
-    "mkdocs (>=1.6.1,<2.0.0)",
-    "pymdown-extensions (>=10.14.3,<11.0.0)",
-    "mkdocs-material[imaging] (>=9.6.9,<10.0.0)",
-    "mkdocs-jupyter (>=0.25.1,<0.26.0)"
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "Natural Language :: Portuguese (Brazilian)"
+    "Natural Language :: Portuguese (Brazilian)",
+    'Intended Audience :: Developers',
 ]
 license = "GPLv3"
 license-files = ["LICEN[CS]E*"]
-
+documentation = "https://mni.readthedocs.io"
+repository = "https://github.com/michelmetran/pyMNI"
 
 [project.urls]
 Homepage = "https://github.com/michelmetran/pyMNI"
@@ -35,3 +33,26 @@ Issues = "https://github.com/michelmetran/pyMNI/issues"
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+#myst-parser = ">=0.16"
+#sphinx = ">=4.0"
+#sphinx-autobuild = ">=2021.0"
+#sphinx-rtd-theme = ">=1.0"
+#mkdocs = ">=1.6.1"
+#pymdown-extensions = ">=10.14.1"
+#mkdocs-material = ">=9.6.9"
+#mkdocs-jupyter = ">=0.25.1"
+#mkdocs-material[imaging] = ">=9.6.9"
+#holidays = ">=0.43"
+#brazilian-holidays = ">=0.1.15"
+mkdocs = ">=1.6.1,<2.0.0"
+pymdown-extensions = ">=10.14.3,<11.0.0"
+#mkdocs-material[imaging] = ">=9.6.9,<10.0.0"
+mkdocs-material = ">=9.6.9,<10.0.0"
+mkdocs-jupyter =  ">=0.25.1,<0.26.0"
