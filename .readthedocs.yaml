@@ -11,6 +11,7 @@ build:
         python: "3.10"
 
     # https://browniebroke.com/blog/2022-11-21-specify-docs-dependency-groups-with-poetry-and-read-the-docs/
+    # https://docs.readthedocs.com/platform/stable/config-file/v2.html#build-jobs
     jobs:
         pre_create_environment:
             - echo "Command run at 'pre_create_environment' step"

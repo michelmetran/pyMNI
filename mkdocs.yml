@@ -8,8 +8,8 @@ copyright: |
 # GitHub Repo Link
 repo_url: https://github.com/michelmetran/pyMNI
 
-docs_dir: 'docs' # Default docs
-site_dir: 'site' # Default site
+#docs_dir: 'docs' # Default docs
+#site_dir: 'site' # Default site
 
 # NavBar
 # Opcional
@@ -70,13 +70,13 @@ markdown_extensions:
   - pymdownx.mark # Marcado
   - pymdownx.tilde  # Realçado
   - pymdownx.highlight  # Código
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-            # Referências
-            # https://github.com/facelessuser/pymdown-extensions/blob/main/docs/src/mkdocs.yml
+#  - pymdownx.superfences:
+#      custom_fences:
+#        - name: mermaid
+#          class: mermaid
+#          format: !!python/name:pymdownx.superfences.fence_code_format
+#            # Referências
+#            # https://github.com/facelessuser/pymdown-extensions/blob/main/docs/src/mkdocs.yml
 
   - toc:
       permalink: true
