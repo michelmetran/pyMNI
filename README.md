@@ -15,7 +15,7 @@ desenvolvido para garantir a integridade, inviolabilidade e segurança dos dados
 processuais, facilitando a comunicação e
 a troca de informações entre sistemas diferentes.
 
-O MNI utiliza a tecnologia de _WebService_ para permitir essa
+O MNI utiliza a tecnologia de _web service_ para permitir essa
 interoperabilidade, assegurando que os dados possam ser
 acessados e compartilhados de maneira segura e eficiente. A implementação dos
 serviços do MNI é responsabilidade dos
