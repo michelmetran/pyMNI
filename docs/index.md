@@ -1,7 +1,9 @@
 # pyMNI
 
 [![Repo](https://img.shields.io/badge/GitHub-repo-blue?logo=github&logoColor=f5f5f5)](https://github.com/michelmetran/pyMNI)
-[![PyPI - Version](https://img.shields.io/pypi/v/mni?logo=pypi&label=PyPI&color=blue)](https://pypi.org/project/mni/)
+[![PyPI - Version](https://img.shields.io/pypi/v/mni?logo=pypi&label=PyPI&color=blue)](https://pypi.org/project/mni/)\
+[![Read the Docs](https://img.shields.io/readthedocs/pyMNI?logo=ReadTheDocs&label=Read%20The%20Docs)](https://pyMNI.readthedocs.io/)
+[![Publish Python to PyPI](https://github.com/michelmetran/pyMNI/actions/workflows/publish-to-pypipoetry.yml/badge.svg)](https://github.com/michelmetran/pyMNI/actions/workflows/publish-to-pypipoetry.yml)
 
 O Modelo Nacional de
 Interoperabilidade ([MNI](https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/comite-nacional-de-gestao-de-tecnologia-da-informacao-e-comunicacao-do-poder-judiciario/modelo-nacional-de-interoperabilidade/))
@@ -43,9 +45,9 @@ também que o pacote pode proporcionar o uso para outros tribunais.
 
 !!! question
 
-    Conhece mais algum _web service_ de algum Tribunal brasileiro?<br>
+    Conhece mais algum _web service_, do Modelo Nacional de
+    Interoperabilidade (MNI), de algum Tribunal brasileiro?<br>
     Se sim, por favor, me envie para preenchermos todos os estados!
-
 
 <br>
 
