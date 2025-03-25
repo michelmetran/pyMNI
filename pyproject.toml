@@ -1,6 +1,6 @@
 [project]
 name = "mni"
-version = "0.2.5"
+version = "0.2.6"
 description = "Modelo Nacional de Interoperabilidade"
 keywords = ["cnj", "mni", "tjsp", "mpsp"]
 authors = [

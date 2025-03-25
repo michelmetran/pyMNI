@@ -23,11 +23,9 @@ tribunais, órgãos da justiça e instituições privadas que desejam aderir ao
 modelo.
 
 <a href="https://esaj.tjsp.jus.br/mniws/servico-intercomunicacao-2.2.2/intercomunicacao?wsdl">
-<img src="./docs/assets/sp.png" alt="WSDL de SP" width="40%">
-</a>
-
-<a href="https://webserverseguro.tjrj.jus.br/MNI/Servico.svc?wsdl">
-<img src="./docs/assets/rj.png" alt="WSDL de RJ" width="40%">
+<img src="./docs/assets/sp.png" alt="WSDL de SP" width="35%">
+</a> <a href="https://webserverseguro.tjrj.jus.br/MNI/Servico.svc?wsdl">
+<img src="./docs/assets/rj.png" alt="WSDL de RJ" width="35%">
 </a>
 
 Imagens obtidas no [Atlas Escolar IBGE](https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/rj.png).

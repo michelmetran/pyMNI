@@ -36,14 +36,13 @@ o [TJSP](https://www.tjsp.jus.br/), entende-se
 também que o pacote pode proporcionar o uso para outros tribunais.
 
 <a href="https://esaj.tjsp.jus.br/mniws/servico-intercomunicacao-2.2.2/intercomunicacao?wsdl">
-<img src="./assets/sp.png" alt="WSDL de SP" width="40%">
+<img src="./assets/sp.png" alt="WSDL de SP" width="35%">
+</a> <a href="https://webserverseguro.tjrj.jus.br/MNI/Servico.svc?wsdl">
+<img src="./assets/rj.png" alt="WSDL de RJ" width="35%">
 </a>
 
-<a href="https://webserverseguro.tjrj.jus.br/MNI/Servico.svc?wsdl">
-<img src="./assets/rj.png" alt="WSDL de RJ" width="40%">
-</a>
-
-Imagens obtidas no [Atlas Escolar IBGE](https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/rj.png).
+Imagens obtidas
+no [Atlas Escolar IBGE](https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/rj.png).
 
 
 <br>
