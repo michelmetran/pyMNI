@@ -24,7 +24,6 @@ modelo.
 
 <img src="./docs/assets/sp.png" alt="SP" width="40%">
 
-
 <a href="https://esaj.tjsp.jus.br/mniws/servico-intercomunicacao-2.2.2/intercomunicacao?wsdl">
 <img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/sp.png" alt="WSDL de SP" width="40%">
 </a>
