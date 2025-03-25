@@ -34,12 +34,18 @@ o [TJSP](https://www.tjsp.jus.br/), entende-se
 também que o pacote pode proporcionar o uso para outros tribunais.
 
 <a href="https://esaj.tjsp.jus.br/mniws/servico-intercomunicacao-2.2.2/intercomunicacao?wsdl">
-<img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/sp.png" alt="WSDL de SP" width="30%"/>
+<img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/sp.png" alt="WSDL de SP" width="30%" class="center">
+</a> <a href="https://webserverseguro.tjrj.jus.br/MNI/Servico.svc?wsdl">
+<img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/rj.png" alt="WSDL de RJ" width="30%" class="center">
 </a>
 
-<a href="https://webserverseguro.tjrj.jus.br/MNI/Servico.svc?wsdl">
-<img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/rj.png" alt="WSDL de RJ" width="30%"/>
-</a>
+<br>
+
+!!! question
+
+    Conhece mais algum _web service_ de algum Tribunal brasileiro?\
+    Se sim, por favor, me envie para preenchermos todos os estados!
+
 
 <br>
 
