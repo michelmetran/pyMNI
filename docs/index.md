@@ -1,7 +1,7 @@
 # pyMNI
 
 [![Repo](https://img.shields.io/badge/GitHub-repo-blue?logo=github&logoColor=f5f5f5)](https://github.com/michelmetran/pyMNI)
-[![PyPI - Version](https://img.shields.io/pypi/v/mni?logo=pypi&label=PyPI&color=blue)](https://pypi.org/project/mni/)\
+[![PyPI - Version](https://img.shields.io/pypi/v/mni?logo=pypi&label=PyPI&color=blue)](https://pypi.org/project/mni/)<br>
 [![Read the Docs](https://img.shields.io/readthedocs/pyMNI?logo=ReadTheDocs&label=Read%20The%20Docs)](https://pyMNI.readthedocs.io/)
 [![Publish Python to PyPI](https://github.com/michelmetran/pyMNI/actions/workflows/publish-to-pypipoetry.yml/badge.svg)](https://github.com/michelmetran/pyMNI/actions/workflows/publish-to-pypipoetry.yml)
 

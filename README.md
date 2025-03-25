@@ -1,7 +1,7 @@
 # pyMNI
 
 [![Repo](https://img.shields.io/badge/GitHub-repo-blue?logo=github&logoColor=f5f5f5)](https://github.com/michelmetran/pyMNI)
-[![PyPI - Version](https://img.shields.io/pypi/v/mni?logo=pypi&label=PyPI&color=blue)](https://pypi.org/project/mni/)\
+[![PyPI - Version](https://img.shields.io/pypi/v/mni?logo=pypi&label=PyPI&color=blue)](https://pypi.org/project/mni/)<br>
 [![Read the Docs](https://img.shields.io/readthedocs/pyMNI?logo=ReadTheDocs&label=Read%20The%20Docs)](https://pyMNI.readthedocs.io/)
 [![Publish Python to PyPI](https://github.com/michelmetran/pyMNI/actions/workflows/publish-to-pypipoetry.yml/badge.svg)](https://github.com/michelmetran/pyMNI/actions/workflows/publish-to-pypipoetry.yml)
 
@@ -22,12 +22,14 @@ serviços do MNI é responsabilidade dos
 tribunais, órgãos da justiça e instituições privadas que desejam aderir ao
 modelo.
 
+<img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/sp.png" alt="WSDL de SP" width="40%">
+
 <a href="https://esaj.tjsp.jus.br/mniws/servico-intercomunicacao-2.2.2/intercomunicacao?wsdl">
-<img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/sp.png" alt="WSDL de SP" width="30%"/>
+<img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/sp.png" alt="WSDL de SP" width="40%">
 </a>
 
 <a href="https://webserverseguro.tjrj.jus.br/MNI/Servico.svc?wsdl">
-<img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/rj.png" alt="WSDL de RJ" width="30%"/>
+<img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/rj.png" alt="WSDL de RJ" width="40%">
 </a>
 
 <br>
