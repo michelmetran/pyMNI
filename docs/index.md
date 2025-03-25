@@ -20,16 +20,31 @@ serviços do MNI é responsabilidade dos
 tribunais, órgãos da justiça e instituições privadas que desejam aderir ao
 modelo.
 
-| Wsdl                                                                                      | Fonte |
-| ----------------------------------------------------------------------------------------- | ----- |
-| [SP](https://esaj.tjsp.jus.br/mniws/servico-intercomunicacao-2.2.2/intercomunicacao?wsdl) | ...   |
-| [RJ](https://webserverseguro.tjrj.jus.br/MNI/Servico.svc?wsdl)                            | ...   |
+<a href="https://esaj.tjsp.jus.br/mniws/servico-intercomunicacao-2.2.2/intercomunicacao?wsdl">
+<img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/sp.png" alt="WSDL de SP" width="30%"/>
+</a>
+
+<a href="https://webserverseguro.tjrj.jus.br/MNI/Servico.svc?wsdl">
+<img src="https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/rj.png" alt="WSDL de RJ" width="30%"/>
+</a>
 
 <br>
 
 ---
 
-## Resolução nº 65/2011
+## Pacote
+
+O pacote [mni](https://pypi.org/project/mni/) tem objetivo de disponibilizar uma
+forma facilitada para interagir com o _web service_ dos tribunais brasileiros.
+Apesar de ter sido feito prioritariamente para interagir com
+o [TJSP](https://www.tjsp.jus.br/), entende-se
+também que o pacote pode proporcionar o uso para outros tribunais.
+
+<br>
+
+---
+
+## Número do Processo
 
 O pacote também provê uma classe chamada `NumeroProcesso` para lidar com as
 validações dos números de processos judiciais definidas na Resolução CNJ nº
