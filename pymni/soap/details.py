@@ -6,19 +6,16 @@ Data: 17.01.2025
 Atualizado em: 17.01.2025
 """
 
-# import zeep
 import pandas as pd
 from caseconverter import snakecase
-# import xmltodict
-
-import mni
-from zeep import Client
-import pandas as pd
-from zeep import client
-from zeep.transports import Transport
-from zeep import Client
+from zeep import Client, client
 from zeep.cache import SqliteCache
 from zeep.transports import Transport
+
+import pymni
+
+# import zeep
+# import xmltodict
 
 
 class MNI(client.Client):
@@ -45,18 +42,15 @@ class MNI(client.Client):
         transport = Transport(cache=cache)
 
         # Instância Client
-        super().__init__(
-            wsdl=self.wsdl,
-            transport=transport
-        )
+        super().__init__(wsdl=self.wsdl, transport=transport)
 
     def consultar_processo(
         self,
-        numero_processo: mni.NumeroProcesso,
+        numero_processo: pymni.NumeroProcesso,
         # Opcionais
         incluir_cabecalho: bool | None = True,
         incluir_movimentos: bool | None = True,
-        incluir_documentos: bool | None = None
+        incluir_documentos: bool | None = None,
     ):
         """
 
@@ -81,7 +75,7 @@ class MNI(client.Client):
 
     def consultar_documentos(
         self,
-        numero_processo: mni.NumeroProcesso,
+        numero_processo: pymni.NumeroProcesso,
         # Opcionais
         # incluir_cabecalho: bool | None = None,
         # incluir_movimentos: bool | None = None,
@@ -109,12 +103,12 @@ class MNI(client.Client):
 
     def obter_documentos(
         self,
-        numero_processo: mni.NumeroProcesso,
+        numero_processo: pymni.NumeroProcesso,
         # Opcionais
         # incluir_cabecalho: bool | None = None,
         # incluir_movimentos: bool | None = None,
         # incluir_documentos: bool | None = True
-        id_documento: str
+        id_documento: str,
     ):
         """
 
@@ -133,11 +127,10 @@ class MNI(client.Client):
             # movimentos=None,
             documento=id_documento,
             # dataReferencia=None,
-
         )
         return result
 
-    def consultar_alteracao(self, numero_processo: mni.NumeroProcesso):
+    def consultar_alteracao(self, numero_processo: pymni.NumeroProcesso):
         """
 
 
@@ -163,9 +156,10 @@ class MNI(client.Client):
 
 
 if __name__ == '__main__':
-    import mni
-    from dotenv import load_dotenv
     import os
+
+    import pymni
+    from dotenv import load_dotenv
 
     # Credenciais
     load_dotenv()
@@ -174,9 +168,10 @@ if __name__ == '__main__':
 
     # Número do Processo
     # num = mni.NumeroProcesso(numero='1512315-89.2022.8.26.0268')
-    num = mni.NumeroProcesso(
-        numero='0139541-45.2007.8.26.0053')  # MPSP não é parte
-    num = mni.NumeroProcesso(numero='1503015-13.2023.8.26.0319')
+    num = pymni.NumeroProcesso(
+        numero='0139541-45.2007.8.26.0053'
+    )  # MPSP não é parte
+    num = pymni.NumeroProcesso(numero='1503015-13.2023.8.26.0319')
 
     # MNI TJSP
     api = MNI(username=TJSP_MNI_USERNAME, password=TJSP_MNI_PASSWORD)
@@ -190,8 +185,9 @@ if __name__ == '__main__':
     )
 
     resultado = api.consultar_documentos(numero_processo=num)
-    resultado = api.obter_documentos(numero_processo=num,
-                                     id_documento='278755780 - 1')
+    resultado = api.obter_documentos(
+        numero_processo=num, id_documento='278755780 - 1'
+    )
 
     # # Se for pesquisar documento, precisa estar None
     # resultado = api.consultar_processo(

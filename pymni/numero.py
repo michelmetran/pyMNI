@@ -293,7 +293,8 @@ class NumeroProcesso:
 
             else:
                 raise Exception(
-                    f'O número em formato texto deve ter 20 ou 25 caracteres, obrigatoriamente. Tem {len(self.numero)}')
+                    f'O número em formato texto deve ter 20 ou 25 caracteres, obrigatoriamente. Tem {len(self.numero)}'
+                )
 
             #
             self.numero = self.texto
@@ -321,9 +322,9 @@ class NumeroProcesso:
         Se é string, avaliar se está no formato correto
         """
         if not re.match(
-                pattern=r'\d{7}\-\d{2}\.\d{4}.\d{1}.\d{2}.\d{4}',
-                # pattern=self.pattern,
-                string=self.numero
+            pattern=r'\d{7}\-\d{2}\.\d{4}.\d{1}.\d{2}.\d{4}',
+            # pattern=self.pattern,
+            string=self.numero,
         ):
             raise Exception(
                 f'O número não está na formatação definida na Resolução CNJ 65/2008\nNNNNNNN-DD.AAAA.J.TR.OOOO'
@@ -334,13 +335,16 @@ class NumeroProcesso:
         """
         Mantém apenas números na string
         """
+        
         n_processo = [int(digito) for digito in self.numero if digito.isdigit()]
         # print(n_processo)
         return ''.join(map(str, n_processo))
 
     @property
     def formatado(self) -> str:
-        return re.sub(self.pattern, repl=r'\1-\2.\3.\4.\5.\6', string=str(self.numero))
+        return re.sub(
+            self.pattern, repl=r'\1-\2.\3.\4.\5.\6', string=str(self.numero)
+        )
 
     @property
     def inteiro(self) -> int:
@@ -391,14 +395,14 @@ class NumeroProcesso:
         try:
             # Há casos que o id_unidade_origem específica a Unidade/Tribunal
             if (
-                    (self.id_orgao == 4 and self.id_unidade_origem in (9001, 10))
-                    or (self.id_orgao == 5 and self.id_unidade_origem in (197,))
-                    or (self.id_orgao == 6 and self.id_unidade_origem in (342,))
-                    or (self.id_orgao == 7 and self.id_unidade_origem in (72,))
-                    or (
+                (self.id_orgao == 4 and self.id_unidade_origem in (9001, 10))
+                or (self.id_orgao == 5 and self.id_unidade_origem in (197,))
+                or (self.id_orgao == 6 and self.id_unidade_origem in (342,))
+                or (self.id_orgao == 7 and self.id_unidade_origem in (72,))
+                or (
                     self.id_orgao == 8 and self.id_unidade_origem in (9001, 235)
-            )
-                    or (self.id_orgao == 9 and self.id_unidade_origem in (8,))
+                )
+                or (self.id_orgao == 9 and self.id_unidade_origem in (8,))
             ):
                 return self.dict_id_tribunal[
                     f'{self.id_orgao:01}.{self.id_tribunal:02}.{self.id_unidade_origem:04}'
@@ -412,7 +416,9 @@ class NumeroProcesso:
 
         #
         except Exception as e:
-            raise ValueError(f'Não encontrou o Tribunal para "{self.id_orgao:01}.{self.id_tribunal:02}"')
+            raise ValueError(
+                f'Não encontrou o Tribunal para "{self.id_orgao:01}.{self.id_tribunal:02}"'
+            )
 
     def check_digito_verificador(self):
         """

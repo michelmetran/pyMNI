@@ -9,16 +9,15 @@ Data: 17.01.2025
 Atualizado em: 17.01.2025
 """
 
-# import zeep
 import pandas as pd
 from caseconverter import snakecase
-# import xmltodict
-
-import mni
-from zeep import Client
-import pandas as pd
-from zeep import client
+from zeep import Client, client
 from zeep.transports import Transport
+
+import pymni
+
+# import zeep
+# import xmltodict
 
 
 class WSDL(client.Client):
@@ -99,8 +98,14 @@ class WSDL(client.Client):
         self.list_operations = [k for k, v in dict_operations.items()]
         return self.list_operations
 
-    def request(self, method: str, params_ignore: list, param_print: bool = False,
-                *args, **kwargs):
+    def request(
+        self,
+        method: str,
+        params_ignore: list,
+        param_print: bool = False,
+        *args,
+        **kwargs,
+    ):
         """
         Faz a solicitação para o servidor SOAP.
         kwargs: print_out
@@ -148,15 +153,16 @@ class WSDL(client.Client):
         return self.service[method_camelcase](
             # idConsultante=self.username,
             # senhaConsultante=self.password,
-            *args, **kwargs
+            *args,
+            **kwargs,
         )
 
 
 if __name__ == '__main__':
-    import mni
-
-    from dotenv import load_dotenv
     import os
+
+    import pymni
+    from dotenv import load_dotenv
 
     # Credenciais
     load_dotenv()
@@ -164,7 +170,7 @@ if __name__ == '__main__':
     TJSP_MNI_PASSWORD = os.getenv('TJSP_MNI_PASSWORD')
 
     # Número do Processo
-    num = mni.NumeroProcesso(numero='1512315-89.2022.8.26.0268')
+    num = pymni.NumeroProcesso(numero='1512315-89.2022.8.26.0268')
 
     # MNI TJSP
     api = WSDL(username=TJSP_MNI_USERNAME, password=TJSP_MNI_PASSWORD)
@@ -178,7 +184,13 @@ if __name__ == '__main__':
         senhaConsultante=TJSP_MNI_PASSWORD,
         numeroProcesso=num.texto,
         param_print=True,
-        params_ignore=['dataReferencia', 'movimentos', 'incluirCabecalho', 'incluirDocumentos', 'documento']
+        params_ignore=[
+            'dataReferencia',
+            'movimentos',
+            'incluirCabecalho',
+            'incluirDocumentos',
+            'documento',
+        ],
     )
 
     print(resultado)
