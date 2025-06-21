@@ -1,6 +1,6 @@
 [project]
-name = "mni"
-version = "0.2.6"
+name = "pyMNI"
+version = "0.2.7"
 description = "Modelo Nacional de Interoperabilidade"
 keywords = ["cnj", "mni", "tjsp", "mpsp"]
 authors = [
