@@ -34,3 +34,4 @@ A classe faz o cálculo do dígito verificador, para avaliar se o número está 
 ## _TODO_
 
 1. Desenvolver documentação para o pacote
+2. Passei de MNI para myMNI e... não publica o pacote...
