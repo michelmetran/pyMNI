@@ -5,23 +5,9 @@
 [![Read the Docs](https://img.shields.io/readthedocs/pyMNI?logo=ReadTheDocs&label=Read%20The%20Docs)](https://pyMNI.readthedocs.io/)
 [![Publish Python to PyPI](https://github.com/michelmetran/pyMNI/actions/workflows/publish-to-pypipoetry.yml/badge.svg)](https://github.com/michelmetran/pyMNI/actions/workflows/publish-to-pypipoetry.yml)
 
-O Modelo Nacional de
-Interoperabilidade ([MNI](https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/comite-nacional-de-gestao-de-tecnologia-da-informacao-e-comunicacao-do-poder-judiciario/modelo-nacional-de-interoperabilidade/))
-do Conselho Nacional de Justiça ([CNJ](https://www.cnj.jus.br/)) é um padrão
-estabelecido para o intercâmbio de
-informações de processos judiciais entre os diversos órgãos do Poder Judiciário
-e outras instituições. Ele foi
-desenvolvido para garantir a integridade, inviolabilidade e segurança dos dados
-processuais, facilitando a comunicação e
-a troca de informações entre sistemas diferentes.
+O Modelo Nacional de Interoperabilidade ([MNI](https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/comite-nacional-de-gestao-de-tecnologia-da-informacao-e-comunicacao-do-poder-judiciario/modelo-nacional-de-interoperabilidade/)) do Conselho Nacional de Justiça ([CNJ](https://www.cnj.jus.br/)) é um padrão estabelecido para o intercâmbio de informações de processos judiciais entre os diversos órgãos do Poder Judiciário e outras instituições. Ele foi desenvolvido para garantir a integridade, inviolabilidade e segurança dos dados processuais, facilitando a comunicação e a troca de informações entre sistemas diferentes.
 
-O MNI utiliza a tecnologia de _web service_ para permitir essa
-interoperabilidade, assegurando que os dados possam ser
-acessados e compartilhados de maneira segura e eficiente. A implementação dos
-serviços do MNI é responsabilidade dos
-tribunais, órgãos da justiça e instituições privadas que desejam aderir ao
-modelo.
-
+O MNI utiliza a tecnologia de _web service_ para permitir essa interoperabilidade, assegurando que os dados possam ser acessados e compartilhados de maneira segura e eficiente. A implementação dos serviços do MNI é responsabilidade dos tribunais, órgãos da justiça e instituições privadas que desejam aderir ao modelo.
 
 <br>
 
@@ -29,11 +15,8 @@ modelo.
 
 ## Pacote
 
-O pacote [mni](https://pypi.org/project/mni/) tem objetivo de disponibilizar uma
-forma facilitada para interagir com o _web service_ dos tribunais brasileiros.
-Apesar de ter sido feito prioritariamente para interagir com
-o [TJSP](https://www.tjsp.jus.br/), entende-se
-também que o pacote pode proporcionar o uso para outros tribunais.
+O pacote [mni](https://pypi.org/project/mni/) tem objetivo de disponibilizar uma forma facilitada para interagir com o _web service_ dos tribunais brasileiros.
+Apesar de ter sido feito prioritariamente para interagir com o [TJSP](https://www.tjsp.jus.br/), entende-se também que o pacote pode proporcionar o uso para outros tribunais.
 
 <a href="https://esaj.tjsp.jus.br/mniws/servico-intercomunicacao-2.2.2/intercomunicacao?wsdl">
 <img src="./assets/sp.png" alt="WSDL de SP" width="35%">
@@ -43,7 +26,6 @@ também que o pacote pode proporcionar o uso para outros tribunais.
 
 Imagens obtidas
 no [Atlas Escolar IBGE](https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/rj.png).
-
 
 <br>
 
@@ -59,14 +41,6 @@ no [Atlas Escolar IBGE](https://atlasescolar.ibge.gov.br/images/bandeiras/ufs/rj
 
 ## Número do Processo
 
-O pacote também provê uma classe chamada `NumeroProcesso` para lidar com as
-validações dos números de processos judiciais definidas na Resolução CNJ nº
-65/2008, que _"dispõe sobre a
-uniformização do número dos processos nos órgãos do Poder Judiciário e dá outras
-providências"_.
+O pacote também provê uma classe chamada `NumeroProcesso` para lidar com as validações dos números de processos judiciais definidas na Resolução CNJ nº 65/2008, que _"dispõe sobre a uniformização do número dos processos nos órgãos do Poder Judiciário e dá outras providências"_.
 
-A classe faz o cálculo do dígito verificador, para avaliar se o número está
-correto. Segundo
-o [TJRS](https://www.cnj.jus.br/wp-content/uploads/2011/02/tjrs.ppt), o
-algoritmo usado pelo CNJ acerta em 99,4% dos casos. Necessário avaliar os casos
-de erro.
+A classe faz o cálculo do dígito verificador, para avaliar se o número está correto. Segundo o [TJRS](https://www.cnj.jus.br/wp-content/uploads/2011/02/tjrs.ppt), o algoritmo usado pelo CNJ acerta em 99,4% dos casos. Necessário avaliar os casos de erro.

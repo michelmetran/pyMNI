@@ -1,6 +1,6 @@
 [project]
 name = "MNI"
-version = "0.2.8"
+version = "0.2.9"
 description = "Modelo Nacional de Interoperabilidade"
 keywords = ["cnj", "mni", "tjsp", "mpsp"]
 authors = [{ name = "Michel Metran", email = "michelmetran@gmail.com" }]

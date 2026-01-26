@@ -1,4 +1,4 @@
-# pyMNI
+# Modelo Nacional de Interoperabilidade (MNI)
 
 [![Repo](https://img.shields.io/badge/GitHub-repo-blue?logo=github&logoColor=f5f5f5)](https://github.com/michelmetran/pyMNI)
 [![PyPI - Version](https://img.shields.io/pypi/v/mni?logo=pypi&label=PyPI&color=blue)](https://pypi.org/project/mni/)<br>
@@ -34,4 +34,6 @@ A classe faz o cálculo do dígito verificador, para avaliar se o número está 
 ## _TODO_
 
 1. Desenvolver documentação para o pacote
-2. Passei de _MNI_ para _pyMNI_ e... não publica o pacote... "HTTP Error 400: The name 'pyMNI' is too similar to an existing project. See https://pypi.org/help/#project-name for more information. | b"<html>\n <head>\n <title>400 The name 'pyMNI' is too similar to an existing project. See https://pypi.org/help/#project-name for more information.\n \n <body>\n <h1>400 The name 'pyMNI' is too similar to an existing project. See https://pypi.org/help/#project-name for more information.\n The server could not comply with the request since it is either malformed or otherwise incorrect.<br/><br/>\nThe name &#x27;pyMNI&#x27; is too similar to an existing project. See https://pypi.org/help/#project-name for more information.\n\n\n \n""
+2. Passei de _MNI_ para _pyMNI_ e... não publica o pacote...
+
+| HTTP Error 400: The name 'pyMNI' is too similar to an existing project. See https://pypi.org/help/#project-name for more information. The server could not comply with the request since it is either malformed or otherwise incorrect.
