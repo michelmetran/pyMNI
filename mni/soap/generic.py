@@ -14,7 +14,7 @@ from caseconverter import snakecase
 from zeep import Client, client
 from zeep.transports import Transport
 
-import pymni
+import mni
 
 # import zeep
 # import xmltodict
@@ -161,7 +161,7 @@ class WSDL(client.Client):
 if __name__ == '__main__':
     import os
 
-    import pymni
+    import mni
     from dotenv import load_dotenv
 
     # Credenciais
@@ -170,7 +170,7 @@ if __name__ == '__main__':
     TJSP_MNI_PASSWORD = os.getenv('TJSP_MNI_PASSWORD')
 
     # Número do Processo
-    num = pymni.NumeroProcesso(numero='1512315-89.2022.8.26.0268')
+    num = mni.NumeroProcesso(numero='1512315-89.2022.8.26.0268')
 
     # MNI TJSP
     api = WSDL(username=TJSP_MNI_USERNAME, password=TJSP_MNI_PASSWORD)

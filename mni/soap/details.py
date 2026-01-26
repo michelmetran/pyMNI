@@ -12,7 +12,7 @@ from zeep import Client, client
 from zeep.cache import SqliteCache
 from zeep.transports import Transport
 
-import pymni
+import mni
 
 # import zeep
 # import xmltodict
@@ -46,7 +46,7 @@ class MNI(client.Client):
 
     def consultar_processo(
         self,
-        numero_processo: pymni.NumeroProcesso,
+        numero_processo: mni.NumeroProcesso,
         # Opcionais
         incluir_cabecalho: bool | None = True,
         incluir_movimentos: bool | None = True,
@@ -75,7 +75,7 @@ class MNI(client.Client):
 
     def consultar_documentos(
         self,
-        numero_processo: pymni.NumeroProcesso,
+        numero_processo: mni.NumeroProcesso,
         # Opcionais
         # incluir_cabecalho: bool | None = None,
         # incluir_movimentos: bool | None = None,
@@ -103,7 +103,7 @@ class MNI(client.Client):
 
     def obter_documentos(
         self,
-        numero_processo: pymni.NumeroProcesso,
+        numero_processo: mni.NumeroProcesso,
         # Opcionais
         # incluir_cabecalho: bool | None = None,
         # incluir_movimentos: bool | None = None,
@@ -130,7 +130,7 @@ class MNI(client.Client):
         )
         return result
 
-    def consultar_alteracao(self, numero_processo: pymni.NumeroProcesso):
+    def consultar_alteracao(self, numero_processo: mni.NumeroProcesso):
         """
 
 
@@ -158,7 +158,7 @@ class MNI(client.Client):
 if __name__ == '__main__':
     import os
 
-    import pymni
+    import mni
     from dotenv import load_dotenv
 
     # Credenciais
@@ -168,10 +168,10 @@ if __name__ == '__main__':
 
     # Número do Processo
     # num = mni.NumeroProcesso(numero='1512315-89.2022.8.26.0268')
-    num = pymni.NumeroProcesso(
+    num = mni.NumeroProcesso(
         numero='0139541-45.2007.8.26.0053'
     )  # MPSP não é parte
-    num = pymni.NumeroProcesso(numero='1503015-13.2023.8.26.0319')
+    num = mni.NumeroProcesso(numero='1503015-13.2023.8.26.0319')
 
     # MNI TJSP
     api = MNI(username=TJSP_MNI_USERNAME, password=TJSP_MNI_PASSWORD)
