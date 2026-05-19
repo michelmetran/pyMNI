@@ -38,6 +38,6 @@ optional = true
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = ">=1.6.1,<2.0.0"
-pymdown-extensions = ">=10.14.3,<11.0.0"
+pymdown-extensions = ">=10.21.3,<11.0.0"
 mkdocs-material = { extras = ["imaging"], version = "^9.6.9" }
 mkdocs-jupyter = ">=0.25.1,<0.26.0"
